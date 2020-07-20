@@ -9,18 +9,17 @@ import java.util.function.Predicate;
 public class MyPredicateDemo {
 
     public static List<Student> filter(List<Student> studentList, Predicate<Student> predicate){
-
         List<Student> list = new ArrayList<>();
-
         studentList.forEach(s->{
-
+            // test() 只是抽象方法没有实现？
             if (predicate.test(s)){
                 list.add(s);
             }
         });
-
         return list;
     }
+
+
 
     public void demo(){
 
