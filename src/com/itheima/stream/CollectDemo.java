@@ -16,7 +16,7 @@ public class CollectDemo {
         studentList.add(new Student(4,"赵六","F",20,40,false));
 
         //java7 根据学生的性别对学生信息进行分组，并最终完成数据返回   Map<String,List<Student>>
-        /*Map<String,List<Student>> map = new HashMap<>();
+ /*       Map<String,List<Student>> map = new HashMap<>();
 
         for (Student student : studentList) {
 
@@ -39,6 +39,7 @@ public class CollectDemo {
 
         /*Map<String, List<Student>> map = studentList.stream().collect(Collectors.groupingBy(Student::getSex));
         System.out.println(map);*/
+
 
         //集合总数统计获取
         /*Long result = studentList.stream().collect(Collectors.counting());
@@ -100,7 +101,7 @@ public class CollectDemo {
         System.out.println(collect);*/
 
         //根据年龄与是否集合进行分组，并获取每组中分数最高的学生
-        Map<Integer, Map<Boolean, Student>> collect = studentList.stream().collect(
+       /* Map<Integer, Map<Boolean, Student>> collect = studentList.stream().collect(
                 Collectors.groupingBy(Student::getAge,
                         Collectors.groupingBy(Student::getIsPass,
                                 Collectors.collectingAndThen(
@@ -110,7 +111,7 @@ public class CollectDemo {
                                 )))
         );
 
-        System.out.println(collect);
+        System.out.println(collect);*/
 
 
     }

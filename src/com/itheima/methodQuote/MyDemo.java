@@ -15,14 +15,20 @@ public class MyDemo {
         students.add(new Student(1,"李四","M"));
         students.add(new Student(3,"王五","F"));
 
-        //students.sort((s1,s2)->s1.getId().compareTo(s2.getId()));
+        students.sort((s1,s2)->s1.getId().compareTo(s2.getId()));
 
-        //Comparator<Student> comparator = Comparator.comparing((Student s) -> s.getId());
+
+        // Comparator.comparing(  )
+
+        // 看不懂
+        Comparator<Student> comparator = Comparator.comparing((Student s) -> s.getId());
 
         //students.sort(Comparator.comparing((s)->s.getId()));
 
+        //
         students.sort(Comparator.comparing(Student::getId));
 
         System.out.println(students);
+
     }
 }

@@ -16,6 +16,7 @@ public class MyPredicateDemo {
                 list.add(s);
             }
         });
+
         return list;
     }
 
