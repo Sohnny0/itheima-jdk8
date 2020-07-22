@@ -11,6 +11,7 @@ public class MyConsumerDemo {
         list.forEach(v->consumer.accept(v));
     }
 
+
     public static void main(String[] args) {
 
         List<String> arrays = new ArrayList<>();

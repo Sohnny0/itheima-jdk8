@@ -14,10 +14,12 @@ public class SourceDemo {
                 "php"};
 
         List<String> list = Arrays.asList(language);
+       /* System.setProperty("jdk.internal.lambda.dumpProxyClasses", "D://");
+        list.forEach(s-> System.out.println(s));*/
 
-        System.setProperty("jdk.internal.lambda.dumpProxyClasses", "D://");
+        list.stream().forEach(s-> System.out.println(s));
 
-        list.forEach(s-> System.out.println(s));
+
     }
 
     public static void main(String[] args) {
